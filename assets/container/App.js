@@ -1,6 +1,7 @@
 import store from 'store/store';
 import { mapState } from 'vuex';
 import Toast from 'utils/Toast';
+import 'utils/question';
 
 export default {
 	name: 'App',

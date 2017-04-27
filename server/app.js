@@ -8,7 +8,7 @@ const app = express();
 
 // 获取端口号或者默认为5900
 // const port = process.argv.length > 2? parseInt(process.argv[2]): 5900;
-const port = 3001;
+const port = 3100;
 // 当前启动环境
 const __DEV__ = process.env.NODE_ENV == 'development';
 

@@ -1,7 +1,6 @@
 import store from 'store/store';
 import { mapState } from 'vuex';
-import Toast from 'utils/Toast';
-import 'utils/question';
+import 'utils/extend';
 
 export default {
 	name: 'App',
@@ -9,17 +8,11 @@ export default {
 	computed: mapState({
 		name: state => state.name
 	}),
-	methods: {
-		clickHandler() {
-			Toast('message');
-		}
-	},
 	render(h) { // eslint-disable-line no-unused-vars
-		const { name,
-				clickHandler } = this;
+		const { name } = this;
 
 		return (
-			<div></div>
+			<div>Hello world</div>
 		);
 	}
 };

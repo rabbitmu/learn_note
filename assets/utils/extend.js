@@ -10,7 +10,7 @@ function extend(Parent, Child) {
 	function Fn() {
 		Parent.call(this);
 	}
-	Fn.prototype = Parent.prototype;
+	Fn.prototype = Object.create(Parent.prototype);
 
 	Child.prototype = new Fn();
 	Child.prototype.constructor = Child;

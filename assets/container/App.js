@@ -1,6 +1,6 @@
 import store from 'store/store';
 import { mapState } from 'vuex';
-import 'utils/extend';
+import 'utils/thousands';
 
 export default {
 	name: 'App',
